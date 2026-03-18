@@ -51,7 +51,7 @@ history | grep -E "cd |pwd"
 Show the terminal where you ran your own `mv`, `cp`, `rm`, and rename commands for challenges **9a–9d** (moving, copying, deleting, and renaming files). This should show both the commands you typed and the `ls` output confirming each action.
 
 <!-- Insert your screenshot below: -->
-![alt text](images/task5_challenge.png)
+![alt text](images/task5_challenge.jpeg)
 
 ---
 
