@@ -107,31 +107,6 @@ After completing the tasks and documentation, my folder structure looks like thi
 ```
 os-se-p20240001
 └── os-lab-p20240001
-    ├── lab1
-    │   ├── images
-    │   │   ├── task 1.png
-    │   │   ├── task 2.png
-    │   │   ├── task 3.png
-    │   │   ├── task 4.png
-    │   │   ├── task 5.png
-    │   │   └── task 6.png
-    │   ├── README.md
-    │   ├── task1_os_info.txt
-    │   ├── task2_file_commands.txt
-    │   ├── task2_files
-    │   │   ├── a.txt
-    │   │   └── b_renamed.txt
-    │   ├── task3_apt_install.txt
-    │   ├── task3_apt_purge.txt
-    │   ├── task3_apt_remove.txt
-    │   ├── task3_apt_update.txt
-    │   ├── task3_config_after_purge.txt
-    │   ├── task3_config_after_remove.txt
-    │   ├── task3_verify_install.txt
-    │   ├── task4_process_list.txt
-    │   ├── task5_app_verify.txt
-    │   ├── task5_multitasking.txt
-    │   └── task6_virtualization_check.txt
     └── lab2
         ├── images
         │   ├── full_history.png
@@ -141,6 +116,7 @@ os-se-p20240001
         │   ├── task5_history.png
         │   ├── task6_challenge.png
         │   └── task6_history.png
+        ├── README.md
         ├── task1_basic_navigation.txt
         ├── task2_filesystem_exploration.txt
         ├── task3_directory_structure.txt
