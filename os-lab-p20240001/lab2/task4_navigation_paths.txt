@@ -1,0 +1,28 @@
+=== Task 4: Navigation with Paths ===
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/hr/policies
+leave_policy.txt
+remote_work.txt
+--- Up to hr/ ---
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/hr
+--- Relative path to onboarding/ ---
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/hr/onboarding
+checklist.txt
+welcome_guide.txt
+--- Sideways to engineering/frontend/ ---
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/engineering/frontend
+app_config.txt
+index.html
+styles.css
+--- Up two levels to techcorp/ ---
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp
+--- Absolute path to marketing/campaigns/ --
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/marketing/campaigns
+q1_launch.txt
+social_media.txt
+--- cd - (back to previous directory) ---
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/engineering/backend
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/marketing/assets
+/usr/bin
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/marketing/assets
+/home/sho/os-se-p20240001/os-lab-p20240001/lab2/techcorp/hr/onboarding

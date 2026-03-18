@@ -1,0 +1,242 @@
+=== Task 6: Advanced Listing & Directory Audit ===
+--- Recursive Listing (ls -R) ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+pipeline_backup.txt
+server_config.txt
+task4_navigation_paths.txt
+
+techcorp/engineering/devops:
+docker-compose.yml
+Dockerfile
+pipeline.txt
+security_audit.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+frontend_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+
+--- Sort by Size: engineering/ (ls -lS) ---
+total 4
+-rw-rw-r-- 1 sho sho 26 Mar 17 14:45 frontend_config.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:45 index.html
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:45 styles.css
+total 12
+-rw-rw-r-- 1 sho sho 29 Mar 18 14:24 pipeline_backup.txt
+-rw-rw-r-- 1 sho sho 29 Mar 17 14:46 server_config.txt
+-rw-rw-r-- 1 sho sho 29 Mar 17 23:00 task4_navigation_paths.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:46 app.js
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:46 database.sql
+total 12
+-rw-rw-r-- 1 sho sho 48 Mar 17 23:10 server_notice.txt
+-rw-rw-r-- 1 sho sho 34 Mar 18 13:46 security_audit.txt
+-rw-rw-r-- 1 sho sho 29 Mar 17 14:46 pipeline.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 docker-compose.yml
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 Dockerfile
+
+--- Sort by Time: techcorp/ (ls -lt) ---
+total 8
+-rw-rw-r-- 1 sho sho 39 Mar 17 14:43 leave_policy.txt
+-rw-rw-r-- 1 sho sho 32 Mar 17 14:43 remote_work.txt
+total 12
+-rw-rw-r-- 1 sho sho 39 Mar 17 23:36 leave_policy.txt
+-rw-rw-r-- 1 sho sho 23 Mar 17 23:11 handbook.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:43 checklist.txt
+-rw-rw-r-- 1 sho sho 52 Mar 17 14:43 welcome_guide.txt
+total 8
+-rw-rw-r-- 1 sho sho 35 Mar 17 14:48 social_media.txt
+-rw-rw-r-- 1 sho sho 32 Mar 17 14:48 q1_2026_launch.txt
+
+--- Human-Readable (ls -lh) ---
+total 4.0K
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 banner.jpg
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 brochure.pdf
+-rw-rw-r-- 1 sho sho 22 Mar 17 23:10 logo_brief.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 logo.png
+total 12K
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 docker-compose.yml
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 Dockerfile
+-rw-rw-r-- 1 sho sho 29 Mar 17 14:46 pipeline.txt
+-rw-rw-r-- 1 sho sho 34 Mar 18 13:46 security_audit.txt
+-rw-rw-r-- 1 sho sho 48 Mar 17 23:10 server_notice.txt
+
+--- Reverse Sort by Size (ls -rlS) ---
+total 12
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:46 database.sql
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:46 app.js
+-rw-rw-r-- 1 sho sho 29 Mar 17 23:00 task4_navigation_paths.txt
+-rw-rw-r-- 1 sho sho 29 Mar 17 14:46 server_config.txt
+-rw-rw-r-- 1 sho sho 29 Mar 18 14:24 pipeline_backup.txt
+
+--- Reverse Sort by Time (ls -rlt) ---
+total 12
+-rw-rw-r-- 1 sho sho 52 Mar 17 14:43 welcome_guide.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:43 checklist.txt
+-rw-rw-r-- 1 sho sho 23 Mar 17 23:11 handbook.txt
+-rw-rw-r-- 1 sho sho 39 Mar 17 23:36 leave_policy.txt
+
+--- Combined: Recursive + Human-Readable + Sort by Size (ls -lhRS) ---
+techcorp/:
+total 12K
+drwxrwxr-x 5 sho sho 4.0K Mar 17 14:42 engineering
+drwxrwxr-x 4 sho sho 4.0K Mar 17 14:42 hr
+drwxrwxr-x 4 sho sho 4.0K Mar 17 23:15 marketing
+
+techcorp/engineering:
+total 12K
+drwxrwxr-x 2 sho sho 4.0K Mar 18 14:24 backend
+drwxrwxr-x 2 sho sho 4.0K Mar 18 14:02 devops
+drwxrwxr-x 2 sho sho 4.0K Mar 18 14:40 frontend
+
+techcorp/engineering/backend:
+total 12K
+-rw-rw-r-- 1 sho sho 29 Mar 18 14:24 pipeline_backup.txt
+-rw-rw-r-- 1 sho sho 29 Mar 17 14:46 server_config.txt
+-rw-rw-r-- 1 sho sho 29 Mar 17 23:00 task4_navigation_paths.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:46 app.js
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:46 database.sql
+
+techcorp/engineering/devops:
+total 12K
+-rw-rw-r-- 1 sho sho 48 Mar 17 23:10 server_notice.txt
+-rw-rw-r-- 1 sho sho 34 Mar 18 13:46 security_audit.txt
+-rw-rw-r-- 1 sho sho 29 Mar 17 14:46 pipeline.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 docker-compose.yml
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 Dockerfile
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-rw-r-- 1 sho sho 26 Mar 17 14:45 frontend_config.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:45 index.html
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:45 styles.css
+
+techcorp/hr:
+total 8.0K
+drwxrwxr-x 2 sho sho 4.0K Mar 17 23:36 onboarding
+drwxrwxr-x 2 sho sho 4.0K Mar 18 14:02 policies
+
+techcorp/hr/onboarding:
+total 12K
+-rw-rw-r-- 1 sho sho 52 Mar 17 14:43 welcome_guide.txt
+-rw-rw-r-- 1 sho sho 39 Mar 17 23:36 leave_policy.txt
+-rw-rw-r-- 1 sho sho 23 Mar 17 23:11 handbook.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:43 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-rw-r-- 1 sho sho 39 Mar 17 14:43 leave_policy.txt
+-rw-rw-r-- 1 sho sho 32 Mar 17 14:43 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxrwxr-x 2 sho sho 4.0K Mar 17 23:31 assets
+drwxrwxr-x 2 sho sho 4.0K Mar 18 14:39 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 sho sho 22 Mar 17 23:10 logo_brief.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 banner.jpg
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 brochure.pdf
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 sho sho 35 Mar 17 14:48 social_media.txt
+-rw-rw-r-- 1 sho sho 32 Mar 17 14:48 q1_2026_launch.txt
+
+--- Challenge Investigation ---
+total 12
+-rw-rw-r-- 1 sho sho 39 Mar 17 23:36 leave_policy.txt
+-rw-rw-r-- 1 sho sho 23 Mar 17 23:11 handbook.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:43 checklist.txt
+-rw-rw-r-- 1 sho sho 52 Mar 17 14:43 welcome_guide.txt
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 sho sho 4.0K Mar 17 23:31 assets
+drwxrwxr-x 2 sho sho 4.0K Mar 18 14:39 campaigns
+
+techcorp/marketing/assets:
+total 4.0K
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 banner.jpg
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 brochure.pdf
+-rw-rw-r-- 1 sho sho 22 Mar 17 23:10 logo_brief.txt
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:48 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 sho sho 32 Mar 17 14:48 q1_2026_launch.txt
+-rw-rw-r-- 1 sho sho 35 Mar 17 14:48 social_media.txt
+total 12
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 Dockerfile
+-rw-rw-r-- 1 sho sho  0 Mar 17 14:47 docker-compose.yml
+-rw-rw-r-- 1 sho sho 29 Mar 17 14:46 pipeline.txt
+-rw-rw-r-- 1 sho sho 34 Mar 18 13:46 security_audit.txt
+-rw-rw-r-- 1 sho sho 48 Mar 17 23:10 server_notice.txt
+total 104K
+-rw-------  1 sho  sho  7.4K Mar 17 23:41 .bash_history
+drwxr-x--- 19 sho  sho  4.0K Mar 13 00:25 .
+drwxr-xr-x  3 root root 4.0K Jan 24 22:17 ..
+drwx------ 12 sho  sho  4.0K Mar 12 15:34 .cache
+drwx------ 19 sho  sho  4.0K Mar 13 00:21 .config
+drwxr-xr-x  3 sho  sho  4.0K Mar 12 15:30 Desktop
+drwxr-xr-x  2 sho  sho  4.0K Jan 24 22:18 Documents
+drwxrwxr-x  3 sho  sho  4.0K Feb  2 21:18 .dotnet
+drwxr-xr-x  2 sho  sho  4.0K Jan 24 22:18 Downloads
+drwx------  4 sho  sho  4.0K Jan 24 22:18 .local
+drwxr-xr-x  2 sho  sho  4.0K Jan 24 22:18 Music
+drwxrwxr-x  4 sho  sho  4.0K Mar 12 23:36 os-se-p20240001
+drwxr-xr-x  3 sho  sho  4.0K Feb  2 20:48 Pictures
+drwx------  3 sho  sho  4.0K Feb  2 21:18 .pki
+drwxr-xr-x  2 sho  sho  4.0K Jan 24 22:18 Public
+drwx------  6 sho  sho  4.0K Feb  2 21:17 snap
+drwx------  2 sho  sho  4.0K Mar 12 16:51 .ssh
+drwxr-xr-x  2 sho  sho  4.0K Jan 24 22:18 Templates
+drwxr-xr-x  2 sho  sho  4.0K Jan 24 22:18 Videos
+drwxrwxr-x  4 sho  sho  4.0K Feb  2 21:18 .vscode
+-rw-r--r--  1 sho  sho  3.7K Mar 31  2024 .bashrc
+-rw-r--r--  1 sho  sho   807 Mar 31  2024 .profile
+-rw-r--r--  1 sho  sho   220 Mar 31  2024 .bash_logout
+-rw-rw-r--  1 sho  sho    60 Mar 12 16:50 .gitconfig
+-rw-------  1 sho  sho    20 Mar 13 00:25 .lesshst
+-rw-r--r--  1 sho  sho     0 Feb  2 21:01 .sudo_as_admin_successful

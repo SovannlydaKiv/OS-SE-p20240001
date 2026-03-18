@@ -1,0 +1,58 @@
+/home/sho
+total 104
+drwxr-x--- 19 sho  sho  4096 Mar 13 00:25 .
+drwxr-xr-x  3 root root 4096 Jan 24 22:17 ..
+-rw-------  1 sho  sho  4675 Mar 17 13:21 .bash_history
+-rw-r--r--  1 sho  sho   220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 sho  sho  3771 Mar 31  2024 .bashrc
+drwx------ 12 sho  sho  4096 Mar 12 15:34 .cache
+drwx------ 19 sho  sho  4096 Mar 13 00:21 .config
+drwxr-xr-x  3 sho  sho  4096 Mar 12 15:30 Desktop
+drwxr-xr-x  2 sho  sho  4096 Jan 24 22:18 Documents
+drwxrwxr-x  3 sho  sho  4096 Feb  2 21:18 .dotnet
+drwxr-xr-x  2 sho  sho  4096 Jan 24 22:18 Downloads
+-rw-rw-r--  1 sho  sho    60 Mar 12 16:50 .gitconfig
+-rw-------  1 sho  sho    20 Mar 13 00:25 .lesshst
+drwx------  4 sho  sho  4096 Jan 24 22:18 .local
+drwxr-xr-x  2 sho  sho  4096 Jan 24 22:18 Music
+drwxrwxr-x  4 sho  sho  4096 Mar 12 23:36 os-se-p20240001
+drwxr-xr-x  3 sho  sho  4096 Feb  2 20:48 Pictures
+drwx------  3 sho  sho  4096 Feb  2 21:18 .pki
+-rw-r--r--  1 sho  sho   807 Mar 31  2024 .profile
+drwxr-xr-x  2 sho  sho  4096 Jan 24 22:18 Public
+drwx------  6 sho  sho  4096 Feb  2 21:17 snap
+drwx------  2 sho  sho  4096 Mar 12 16:51 .ssh
+-rw-r--r--  1 sho  sho     0 Feb  2 21:01 .sudo_as_admin_successful
+drwxr-xr-x  2 sho  sho  4096 Jan 24 22:18 Templates
+drwxr-xr-x  2 sho  sho  4096 Jan 24 22:18 Videos
+drwxrwxr-x  4 sho  sho  4096 Feb  2 21:18 .vscode
+--- Root directory (/) ---
+/
+bin
+bin.usr-is-merged
+boot
+cdrom
+dev
+etc
+home
+lib
+lib64
+lib.usr-is-merged
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+sbin.usr-is-merged
+snap
+srv
+swap.img
+sys
+tmp
+usr
+var
+--- Back to home ---
+/home/sho
