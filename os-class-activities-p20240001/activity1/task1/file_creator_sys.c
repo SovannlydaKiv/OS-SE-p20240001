@@ -13,7 +13,6 @@ int main() {
 
     const char *text = "Hello from Operating Systems class!\n";
     write(fd, text, strlen(text));
-
     close(fd);
 
     const char *msg = "File created successfully!\n";
