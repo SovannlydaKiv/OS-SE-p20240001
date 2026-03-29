@@ -1,0 +1,20 @@
+  959  ./forkchild > result_forkchild.txt 2>&1
+  960  clear
+  961  gcc -o forkchild forkchild.c
+  962  ./forkchild > result_forkchild.txt 2>&1
+  963  cd activity2/task1
+  964  clear 
+  965  gcc -o forkchild forkchild.c
+  966  ./forkchild > result_forkchild.txt 2>&1
+  967  cat result_forkchild.txt
+  968  clear 
+  969  ps -ef --forest | grep forkchild
+  970  clear 
+  971  gcc forkchild.c -o forkchild
+  972  ./forkchild
+  973  ps -ef --forest | grep forkchild
+  974  ps -ef --forest | grep -v grep | grep forkchild
+  975  clear 
+  976  gcc forkchild.c -o forkchild
+  977  ./forkchild
+  978  history | tail -n 20 > command_used_forkchild.txt
