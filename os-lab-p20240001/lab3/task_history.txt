@@ -1,0 +1,101 @@
+=== Full Command History ===
+ 1061  hostname -I
+ 1062  ip a
+ 1063  hostname -I
+ 1064  clear
+ 1065  ldd ./sysinfo_test_v2
+ 1066  clear
+ 1067  cd shared_lib_lab/
+ 1068  clear 
+ 1069  ldd ./sysinfo_test_v2
+ 1070  ./sysinfo_test_v2
+ 1071  ip a
+ 1072  hostname -I
+ 1073  clear
+ 1074  cd os-se-p20240001/os-lab-p20240001/lab3/shared_lib_lab/
+ 1075  clear
+ 1076  cat > techcorp_sysinfo.h << 'EOF'
+ 1077  #ifndef TECHCORP_SYSINFO_H
+ 1078  #define TECHCORP_SYSINFO_H
+ 1079  const char* tc_get_hostname(void);
+ 1080  const char* tc_get_uptime(void);
+ 1081  int tc_get_cpu_count(void);
+ 1082  long tc_get_memory_mb(void);
+ 1083  #endif
+ 1084  EOF
+ 1085  cat > sysinfo_test_v2.c << 'EOF'
+ 1086  #include <stdio.h>
+ 1087  #include "techcorp_sysinfo.h"
+ 1088  int main(void) {
+ 1089      printf("=== TechCorp System Info Report v2 ===\n");
+ 1090      printf("Hostname : %s\n", tc_get_hostname());
+ 1091      printf("Uptime   : %s\n", tc_get_uptime());
+ 1092      printf("CPU Cores: %d\n", tc_get_cpu_count());
+ 1093      printf("Memory   : %ld MB\n", tc_get_memory_mb());
+ 1094      printf("======================================\n");
+ 1095      return 0;
+ 1096  }
+ 1097  EOF
+ 1098  echo "" >> ../task5_shared_library.txt
+ 1099  echo "--- Phase 4: Partner A wrote v2 test ---" >> ../task5_shared_library.txt
+ 1100  cat sysinfo_test_v2.c >> ../task5_shared_library.txt
+ 1101  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+ 1102  LD_LIBRARY_PATH=. ./sysinfo_test_v2
+ 1103  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+ 1104  echo "" >> ../task5_shared_library.txt
+ 1105  echo "--- Phase 4: v2 test run ---" >> ../task5_shared_library.txt
+ 1106  LD_LIBRARY_PATH=. ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1107  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+ 1108  sudo ldconfig
+ 1109  echo "" >> ../task5_shared_library.txt
+ 1110  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+ 1111  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+ 1112  echo "" >> ../task5_shared_library.txt
+ 1113  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+ 1114  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+ 1115  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1116  echo "" >> ../task5_shared_library.txt
+ 1117  echo "--- Pair Information ---" >> ../task5_shared_library.txt
+ 1118  echo "Role A (Library Author → v2 Tester): Kiv Sovannlyda - p20240001" >> ../task5_shared_library.txt
+ 1119  echo "Role B (Test Author → v2 Library Extender): Chiv Inthera - p20240019" >> ../task5_shared_library.txt
+ 1120  cd ..
+ 1121  clear 
+ 1122  clear
+ 1123  ldconfig -p | grep techcorp
+ 1124  clearclear
+ 1125  clear
+ 1126  cd shared_lib_lab/
+ 1127  clear
+ 1128  ldconfig -p | grep techcorp
+ 1129  ldd ./sysinfo_test_v2
+ 1130  ./sysinfo_test_v2
+ 1131  echo "=== Full Command History ===" > task_history.txt
+ 1132  history | tail -n 100 >> task_history.txt
+ 1133  history | tail -n 100 
+ 1134  cd os-se-p20240001/os-lab-p20240001/lab3
+ 1135  clear
+ 1136  tree 
+ 1137  cd os-se-p20240001/os-lab-p20240001/lab3
+ 1138  git add .
+ 1139  git commit -m "Finish tasks 1-5"
+ 1140  git push origin master
+ 1141  cd os-se-p20240001/os-lab-p20240001/lab3/
+ 1142  git add . 
+ 1143  git commit -m "add images"
+ 1144  git push origin master 
+ 1145  git add . 
+ 1146  git commit -m "add task3 image"
+ 1147  git push origin master
+ 1148  cd os-se-p20240001/os-lab-p20240001/lab3/
+ 1149  git pull origin master 
+ 1150  cd os-se-p20240001/os-lab-p20240001/lab3
+ 1151  clear
+ 1152  sudo nano /etc/default/grub
+ 1153  sudo nano /boot/grub/grub.cfg
+ 1154  reboot 
+ 1155  sudo nano /etc/default/grub
+ 1156  reboot
+ 1157  cd os-se-p20240001/os-lab-p20240001/lab3/
+ 1158  nano task_history.txt
+ 1159  echo "=== Full Command History ===" > task_history.txt
+ 1160  history | tail -n 100 >> task_history.txt
