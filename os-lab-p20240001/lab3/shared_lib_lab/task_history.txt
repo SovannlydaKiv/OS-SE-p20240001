@@ -1,0 +1,101 @@
+=== Full Command History ===
+ 1031  }
+ 1032  int tc_get_cpu_count(void) {
+ 1033      return (int)sysconf(_SC_NPROCESSORS_ONLN);
+ 1034  }
+ 1035  EOF
+ 1036  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+ 1037  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o
+ 1038  echo "" >> ../task5_shared_library.txt
+ 1039  echo "--- Partner A: Compiled shared library ---" >> ../task5_shared_library.txt
+ 1040  file libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+ 1041  ls -l libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+ 1042  clear 
+ 1043  scp libtechcorp_sysinfo.so partnerB@192.168.32.128:~/shared_lib_lab/
+ 1044  clear
+ 1045  scp libtechcorp_sysinfo.so partnerB@192.168.32.128:~/shared_lib_lab/
+ 1046  sudo systemctl status ssh
+ 1047  sudo apt install openssh-server -y
+ 1048  sudo systemctl start ssh
+ 1049  scp libtechcorp_sysinfo.so partnerB@192.168.32.128:~/shared_lib_lab/
+ 1050  ping 192.168.32.128
+ 1051  cd os-se-p20240001/os-lab-p20240001/lab3/
+ 1052  cd shared_lib_lab/
+ 1053  clear
+ 1054  scp libtechcorp_sysinfo.so partnerB@192.168.32.128:~/shared_lib_lab/
+ 1055  clear
+ 1056  sudo systemctl start ssh
+ 1057  scp libtechcorp_sysinfo.so partnerB@192.168.32.128:~/shared_lib_lab/
+ 1058  clear
+ 1059  ping 192.168.32.128
+ 1060  ip a
+ 1061  hostname -I
+ 1062  ip a
+ 1063  hostname -I
+ 1064  ip a
+ 1065  hostname -I
+ 1066  clear
+ 1067  cd os-se-p20240001/os-lab-p20240001/lab3/shared_lib_lab/
+ 1068  clear
+ 1069  cat > techcorp_sysinfo.h << 'EOF'
+#ifndef TECHCORP_SYSINFO_H
+#define TECHCORP_SYSINFO_H
+
+const char* tc_get_hostname(void);
+const char* tc_get_uptime(void);
+int tc_get_cpu_count(void);
+long tc_get_memory_mb(void);
+
+#endif
+EOF
+
+ 1070  cat > sysinfo_test_v2.c << 'EOF'
+#include <stdio.h>
+#include "techcorp_sysinfo.h"
+
+int main(void) {
+    printf("=== TechCorp System Info Report v2 ===\n");
+    printf("Hostname : %s\n", tc_get_hostname());
+    printf("Uptime   : %s\n", tc_get_uptime());
+    printf("CPU Cores: %d\n", tc_get_cpu_count());
+    printf("Memory   : %ld MB\n", tc_get_memory_mb());
+    printf("======================================\n");
+    return 0;
+}
+EOF
+
+ 1071  echo "" >> ../task5_shared_library.txt
+ 1072  echo "--- Phase 4: Partner A wrote v2 test ---" >> ../task5_shared_library.txt
+ 1073  cat sysinfo_test_v2.c >> ../task5_shared_library.txt
+ 1074  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+ 1075  LD_LIBRARY_PATH=. ./sysinfo_test_v2
+ 1076  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+ 1077  echo "" >> ../task5_shared_library.txt
+ 1078  echo "--- Phase 4: v2 test run ---" >> ../task5_shared_library.txt
+ 1079  LD_LIBRARY_PATH=. ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1080  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+ 1081  sudo ldconfig
+ 1082  echo "" >> ../task5_shared_library.txt
+ 1083  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+ 1084  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+ 1085  echo "" >> ../task5_shared_library.txt
+ 1086  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+ 1087  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+ 1088  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1089  echo "" >> ../task5_shared_library.txt
+ 1090  echo "--- Pair Information ---" >> ../task5_shared_library.txt
+ 1091  echo "Role A (Library Author → v2 Tester): Kiv Sovannlyda - p20240001" >> ../task5_shared_library.txt
+ 1092  echo "Role B (Test Author → v2 Library Extender): Chiv Inthera - p20240019" >> ../task5_shared_library.txt
+ 1093  cd ..
+ 1094  clear 
+ 1095  clear
+ 1096  ldconfig -p | grep techcorp
+ 1097  clearclear
+ 1098  clear
+ 1099  cd shared_lib_lab/
+ 1100  clear
+ 1101  ldconfig -p | grep techcorp
+ 1102  ldd ./sysinfo_test_v2
+ 1103  ./sysinfo_test_v2
+ 1104  echo "=== Full Command History ===" > task_history.txt
+ 1105  history | tail -n 100 >> task_history.txt
