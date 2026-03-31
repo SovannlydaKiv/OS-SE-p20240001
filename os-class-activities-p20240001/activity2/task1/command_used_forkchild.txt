@@ -1,0 +1,20 @@
+ 1196  git push origin master
+ 1197  cd os-se-p20240001/
+ 1198  clear
+ 1199  cd activity2/task1
+ 1200  cd os-class-activities-p20240001/activity2/task1
+ 1201  clear
+ 1202  cd os-class-activities-p20240001/activity2/
+ 1203  mkdir task1
+ 1204  cd task1
+ 1205  cd os-class-activities-p20240001/activity2/task1
+ 1206  clear
+ 1207  gcc -o forkchild forkchild.c
+ 1208  ./forkchild > result_forkchild.txt 2>&1
+ 1209  cd os-class-activities-p20240001/activity2/task1/
+ 1210  gcc -o forkchild forkchild.c
+ 1211  ./forkchild
+ 1212  ./forkchild > result_forkchild.txt 2>&1
+ 1213  clear
+ 1214  cat result_forkchild.txt
+ 1215  history | tail -n 20 > command_used_forkchild.txt
