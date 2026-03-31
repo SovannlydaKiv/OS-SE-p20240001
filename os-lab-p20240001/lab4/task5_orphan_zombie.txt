@@ -1,0 +1,12 @@
+=== Task 5: Orphan & Zombie Processes ===
+--- Orphan process observation ---
+Child PID: 6340, Original PPID: 6639 , New PPID after parent exit: 1834
+--- Zombie process observation ---
+Zombie PID: 7435 , State: Z (zombie/defunct), Parent PID: 7434
+--- Zombie and Orphan Cleanup Notes ---
+Q: How are orphans cleaned up? A: They get 'adopted' by a system process, like since every child needs a parent, the OS gives them a new one to handle their final exit
+Q: How are zombies cleaned up? A: The parent process has to acknowledge them by calling wait(). If the parent won't do it, the zombie stays stuck until the parent itself dies
+Q: Can you kill a zombie with 'kill -9'? A: No, a zombie is just a ghost in the process table so in order to get rid of it, you have to kill its parent instead
+--- Challenge Orphan & Zombie ---
+5a Observation: After calling wait(), the child process status changed from 'Z' to being completely removed from the process table.
+5b Observation: 'ps --forest' showed one parent PID with three distinct branches for the child PIDs, all active at once.
