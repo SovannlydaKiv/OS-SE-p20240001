@@ -1,0 +1,20 @@
+ 1220  gcc -o shm-producer shm-producer.c -lrt
+ 1221  gcc -o shm-consumer shm-consumer.c -lrt
+ 1222  ./shm-producer
+ 1223  cd os-class-activities-p20240001/activity2/task3_shm
+ 1224  gcc -o shm-consumer shm-consumer.c -lrt
+ 1225  ./shm-producer
+ 1226  cd os-class-activities-p20240001/activity2/task3_shm
+ 1227  gcc -o shm-producer shm-producer.c -lrt
+ 1228  gcc -o shm-consumer shm-consumer.c -lrt
+ 1229  ./shm-producer
+ 1230  ./shm-consumer > result-shm-ipc.txt
+ 1231  cat result-shm-ipc.txt
+ 1232  history | tail -n 20 > command_used_shm.txt
+ 1233  cd os-class-activities-p20240001/activity2/task3_shm
+ 1234  gcc -o shm-producer shm-producer.c -lrt
+ 1235  gcc -o shm-consumer shm-consumer.c -lrt
+ 1236  ./shm-producer
+ 1237  ./shm-consumer > result-shm-ipc.txt
+ 1238  cat result-shm-ipc.txt
+ 1239  history | tail -n 20 > command_used_shm.txt
