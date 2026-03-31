@@ -1,0 +1,20 @@
+ 1245  os-class-activities-p20240001/activity2/
+ 1246  clear
+ 1247  cd os-class-activities-p20240001/activity2/
+ 1248  cd activity2/task4_mq
+ 1249  mkdir task4_mq
+ 1250  clear
+ 1251  cd activity2/task4_mqclea
+ 1252  clear
+ 1253  cd activity2/task4_mq
+ 1254  cd os-class-activities-p20240001/activity2/task4_mq/
+ 1255  gcc -o sender sender.c -lrt
+ 1256  gcc -o receiver receiver.c -lrt
+ 1257  ./sender
+ 1258  clear
+ 1259  gcc -o sender sender.c -lrt
+ 1260  gcc -o receiver receiver.c -lrt
+ 1261  ./sender
+ 1262  ./receiver > result-mq-ipc.txt
+ 1263  cat result-mq-ipc.txt
+ 1264  history | tail -n 20 > command_used_mq.txt
