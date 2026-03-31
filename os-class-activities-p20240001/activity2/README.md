@@ -52,10 +52,10 @@ Parent: done.
 
 4. **Draw the process tree for your program (parent → child). Include PIDs from your output.**
 
-   > ```forkchild (PID: 7040)  ← parent
+   > forkchild (PID: 7040)  ← parent
          |
          └── forkchild (PID: 7041)  ← child
-     ```
+    
 
 5. **Which command did you use to view the process tree (`ps --forest`, `pstree`, or `htop`)? What information does each column show?**
 
