@@ -1,0 +1,13 @@
+sho        14045   13736   14045  0    5 18:55 pts/3    00:00:00 ./threads_observe
+sho        14045   13736   14047  0    5 18:55 pts/3    00:00:00 ./threads_observe
+sho        14045   13736   14048  0    5 18:55 pts/3    00:00:00 ./threads_observe
+sho        14045   13736   14049  0    5 18:55 pts/3    00:00:00 ./threads_observe
+sho        14045   13736   14050  0    5 18:55 pts/3    00:00:00 ./threads_observe
+sho        14101   13942   14101  0    1 18:56 pts/0    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+  14045   14045 pts/3    00:00:00 threads_observe
+  14045   14047 pts/3    00:00:00 threads_observe
+  14045   14048 pts/3    00:00:00 threads_observe
+  14045   14049 pts/3    00:00:00 threads_observe
+  14045   14050 pts/3    00:00:00 threads_observe
+--- /proc/14045/task/ listing ---

@@ -1,0 +1,20 @@
+ 1495  mkdir activity3
+ 1496  cd activity3
+ 1497  clear
+ 1498  cd os-se-p20240001/os-class-activities-p20240001/
+ 1499  mkdir activity3/task1_socket
+ 1500  mkdir activity3
+ 1501  mkdir task1_socket 
+ 1502  cd actity3
+ 1503  cd activity3
+ 1504  mkdir task1_socket
+ 1505  cd os-class-activities-p20240001/activity3/task1_socket/
+ 1506  gcc -o server server.c
+ 1507  gcc -o client client.c
+ 1508  ./server
+ 1509  ./server > result_server.txt 2>&1 &
+ 1510  sleep 1
+ 1511  ./client > result_client.txt 2>&1
+ 1512  wait
+ 1513  cat result_server.txt result_client.txt > result_socket.txt
+ 1514  history | tail -n 20 > command_used_socket.txt

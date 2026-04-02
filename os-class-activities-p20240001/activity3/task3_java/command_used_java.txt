@@ -1,0 +1,30 @@
+ 1520  mkdir task2_threads
+ 1521  cd task2_threads/
+ 1522  gcc -o threads threads.c -pthread
+ 1523  ./threads > result_threads.txt 2>&1
+ 1524  cat result_threads.txt
+ 1525  ./threads
+ 1526  gcc -o threads_mutex threads_mutex.c -pthread
+ 1527  ./threads_mutex > result_threads_mutex.txt 2>&1
+ 1528  cat result_threads_mutex.txt
+ 1529  history | tail -n 20 > command_used_threads.txt
+ 1530  cd os-class-activities-p20240001/activity3/task1_socket/
+ 1531  clear
+ 1532  ./threads_mutex
+ 1533  cd os-class-activities-p20240001/activity3/task2_threads/
+ 1534  clear
+ 1535  ./threads
+ 1536  cd os-class-activities-p20240001/activity3/task2_threads/
+ 1537  cd os-class-activities-p20240001/activity3/task3_java/
+ 1538  javac ThreadDemo.java
+ 1539  java ThreadDemo > result_thread_demo.txt 2>&1
+ 1540  cat result_thread_demo.txt
+ 1541  javac RunnableDemo.java
+ 1542  java RunnableDemo > result_runnable_demo.txt 2>&1
+ 1543  cat result_runnable_demo.txt
+ 1544  javac PoolDemo.java
+ 1545  java PoolDemo > result_pool_demo.txt 2>&1
+ 1546  javac PoolDemo.java
+ 1547  java PoolDemo > result_pool_demo.txt 2>&1
+ 1548  cat result_pool_demo.txtcat result_pool_demo.txt
+ 1549  history | tail -n 30 > command_used_java.txt
