@@ -74,19 +74,21 @@ Show the output of your `challenge.c` program joining its threads and exiting gr
 ## Answers to Lab Questions
 
 1. **Why do threads share memory while processes do not (by default)?**
-   > _Your answer here_
+   > Threads share the same memory because they are created within the same process so they share the same memory space but processes do not because they are seperate and each of them get their own memory
 
 2. **Based on the 1:1 mapping, what is the role of an LWP (Lightweight Process) in Linux?**
-   > _Your answer here_
+   > The role of an LWP is that it acts as the bridge between a user thread and the kernel so each user thread maps to one LWP, which is what the kernel actually schedules and runs on the CPU
 
 3. **Why is it restricted to send signals to kernel threads (e.g., `kthreadd` or `kworker`)?**
-   > _Your answer here_
+   > It is restricted because kernel threads handle important system tasks like memory mangement so if we are able to send signals then it could crash the entire system
 
 4. **Why can't `SIGKILL` (kill -9) be caught by a signal handler?**
-   > _Your answer here_
+   > It can't be caught because it is directly handled by the kernel, so this guarantees that a process can always be forcibly terminated
 
 ---
 
 ## Reflection
 
-> _What was the most challenging part of managing threads and signals in this lab? How do you think these concepts apply to large-scale applications like web servers or databases?_
+**What was the most challenging part of managing threads and signals in this lab? How do you think these concepts apply to large-scale applications like web servers or databases?**
+
+> The most challenging part for me was to find the threads that we need to put in the screenshot because I'm not sure what I'm actually looking for/at so it was quite difficult for me to grasp that and also making sure that the output/screenshots necessary corresponds to what we need 
