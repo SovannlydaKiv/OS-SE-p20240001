@@ -1,8 +1,7 @@
 # OS Lab 5 Submission — Threads, Kernel Workers & Process Signals
 
-- **Student Name:** [Your Name Here]
-- **Student ID:** [Your Student ID Here]
-
+- **Student Name:** Kiv Sovannlyda
+- **Student ID:** p20240001
 ---
 
 ## Task Output Source Files
