@@ -1,0 +1,6 @@
+=== broadcaster script ===
+-rwxrwxr-x 1 sho sho 331 May 25 23:00 /home/sho/bin/broadcaster
+=== outbox permissions ===
+drwxr-xr-x 2 sho sho 4096 May 25 23:00 /home/sho/public_outbox
+=== secret.txt ===
+kernel - 2026-05-25 23:00:32

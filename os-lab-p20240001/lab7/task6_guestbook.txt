@@ -1,0 +1,6 @@
+=== guestbook permissions ===
+-rw------- 1 sho sho 31 May 25 23:12 /home/sho/guestbook.txt
+=== sign_book permissions ===
+-rwsr-xr-x 1 sho sho 16096 May 25 23:11 /home/sho/bin/sign_book
+=== guestbook contents ===
+Visitor signed: Hello from sho

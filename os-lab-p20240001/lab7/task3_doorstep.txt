@@ -1,0 +1,6 @@
+========================================
+Welcome, sho
+Users currently logged in: 2
+Server uptime: up 1 hour, 34 minutes
+Random tech quote: Automate the boring stuff.
+========================================

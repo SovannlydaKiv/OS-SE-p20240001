@@ -1,0 +1,7 @@
+=== PATH ===
+/home/sho/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+=== warmup location ===
+/home/sho/bin/warmup
+=== warmup command output ===
+Hello from my first script! My current directory is:
+/home/sho

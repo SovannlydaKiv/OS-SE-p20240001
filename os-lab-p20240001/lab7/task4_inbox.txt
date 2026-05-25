@@ -1,0 +1,4 @@
+=== inbox permissions ===
+drwx-wx-wx 2 sho sho 4096 May 25 22:52 /home/sho/public_inbox
+=== inbox files as owner ===
+total 0
