@@ -1,0 +1,13 @@
+dev_alice:x:1005:1006::/home/dev_alice:/bin/bash
+dev_bob:x:1006:1007::/home/dev_bob:/bin/bash
+total 40
+drwxr-xr-x 10 root      root      4096 May 19 18:04 .
+drwxr-xr-x 28 root      root      4096 May 12 15:02 ..
+drwxr-x---  2 dev_alice dev_alice 4096 May 19 18:04 dev_alice
+drwxr-x---  2 dev_bob   dev_bob   4096 May 19 18:04 dev_bob
+drwxr-x--- 14 inthera   inthera   4096 May 12 15:05 inthera
+drwxr-x--- 14 lyda      lyda      4096 May 12 14:37 lyda
+drwxr-x---  2 phengroth phengroth 4096 May 12 14:14 phengroth
+drwxr-x---  2 sathya    sathya    4096 May 12 14:14 sathya
+drwxr-x---  2 inthera   inthera   4096 May 12 14:03 se-team7
+drwxr-x--- 21 sho       sho       4096 May 12 15:05 sho
