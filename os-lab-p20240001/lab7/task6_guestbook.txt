@@ -1,6 +1,6 @@
 === guestbook permissions ===
--rw------- 1 sho sho 31 May 25 23:12 /home/sho/guestbook.txt
+-rw------- 1 se-kiv-sovannlyda se-kiv-sovannlyda 45 May 26 14:16 /home/se-kiv-sovannlyda/guestbook.txt
 === sign_book permissions ===
--rwsr-xr-x 1 sho sho 16096 May 25 23:11 /home/sho/bin/sign_book
+-rwsr-xr-x 1 se-kiv-sovannlyda se-kiv-sovannlyda 16096 May 26 14:16 /home/se-kiv-sovannlyda/bin/sign_book
 === guestbook contents ===
-Visitor signed: Hello from sho
+Visitor signed: Hello from se-kiv-sovannlyda

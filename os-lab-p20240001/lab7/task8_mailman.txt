@@ -1,8 +1,12 @@
 === mailman output ===
-Sent message to sho
-Messages sent: 1
+Sent message to se-chheng-kimter
+Sent message to se-hai-monyoudom
+Sent message to se-kiv-sovannlyda
+Messages sent: 3
 === my inbox ===
-total 4
--rw-rw-r-- 1 sho sho 95 May 25 23:22 message_from_sho.txt
+total 8
+-rw-rw-r-- 1 se-hai-monyoudom  se-hai-monyoudom  122 May 26 14:17 message_from_se-hai-monyoudom.txt
+-rw-rw-r-- 1 se-kiv-sovannlyda se-kiv-sovannlyda 123 May 26 14:18 message_from_se-kiv-sovannlyda.txt
 === messages I received ===
-Hello sho, I am an automated bot written by sho. I successfully read your secret word: kernel.
+Hello se-kiv-sovannlyda, I am an automated bot written by se-hai-monyoudom. I successfully read your secret word: kernel.
+Hello se-kiv-sovannlyda, I am an automated bot written by se-kiv-sovannlyda. I successfully read your secret word: kernel.
