@@ -1,0 +1,8 @@
+=== drop zone permissions ===
+drwxrwxrwt 2 se-kiv-sovannlyda se-kiv-sovannlyda 4096 Jun  4 14:49 /home/se-kiv-sovannlyda/vendor_reports
+=== drop zone files ===
+total 8
+-rw-rw-r-- 1 se-kiv-sovannlyda se-kiv-sovannlyda 27 Jun  4 14:49 my_rules.txt
+-rw-rw-r-- 1 se-chiv-inthera   se-chiv-inthera   15 Jun  4 14:49 partner_report.txt
+=== partner deletion result ===
+rm: cannot remove '/home/se-kiv-sovannlyda/vendor_reports/my_rules.txt': Operation not permitted

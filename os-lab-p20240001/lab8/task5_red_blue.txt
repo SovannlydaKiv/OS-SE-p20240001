@@ -1,0 +1,21 @@
+=== public api permissions ===
+drwxr-x--x 11 se-kiv-sovannlyda se-kiv-sovannlyda 4096 Jun  4 14:34 /home/se-kiv-sovannlyda
+drwxr-xr-x  2 se-kiv-sovannlyda se-kiv-sovannlyda 4096 Jun  4 14:36 /home/se-kiv-sovannlyda/public_api
+total 12
+-rwxrwxr-x 1 se-kiv-sovannlyda se-kiv-sovannlyda  847 Jun  4 14:35 buy_widget
+-rw-rw-rw- 1 se-kiv-sovannlyda se-kiv-sovannlyda    0 Jun  4 14:37 inventory.lock
+-rw-rw-rw- 1 se-kiv-sovannlyda se-kiv-sovannlyda    2 Jun  4 14:37 inventory.txt
+-rw-rw-rw- 1 se-kiv-sovannlyda se-kiv-sovannlyda 3241 Jun  4 14:37 sales.log
+=== inventory ===
+0
+=== red team sales evidence ===
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_31 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_15 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_17 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_29 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_39 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_25 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_49 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_47 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_30 bought 2 widgets.
+p20240001 [SUCCESS] RedTeam_se-chiv-inthera_33 bought 2 widgets.

@@ -1,0 +1,8 @@
+Run 1 final inventory: -2
+Run 2 final inventory: -2
+Run 3 final inventory: -2
+Run 4 final inventory: -2
+Run 5 final inventory: -2
+
+Explanation:
+The final inventory changes because multiple background processes are running concurrently without any synchronization, and this creates a TOC-TOU race condition, so several bot processes read the exact same inventory value before any of them have a chance to subtract from it and write the updated value back to the file, causing updates to overwrite and cancel each other out
