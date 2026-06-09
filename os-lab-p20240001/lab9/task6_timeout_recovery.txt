@@ -1,0 +1,6 @@
+=== sync_timeout permissions ===
+-rwxrwxr-x 1 se-kiv-sovannlyda se-kiv-sovannlyda 585 Jun  9 14:43 /home/se-kiv-sovannlyda/bin/sync_timeout
+=== timeout evidence ===
+ERROR: could not lock Vault Beta within 5 seconds
+exit status: 2
+=== process check after stopping old script ===
