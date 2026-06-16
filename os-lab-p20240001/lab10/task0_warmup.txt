@@ -1,0 +1,19 @@
+=== script permissions ===
+-rwxrwxr-x 1 se-kiv-sovannlyda se-kiv-sovannlyda 405 Jun 16 13:13 /home/se-kiv-sovannlyda/bin/automation_demo
+=== log contents ===
+2026-06-16 13:13:10 | automation_demo started by user se-kiv-sovannlyda
+2026-06-16 13:13:10 | working directory is /home/se-kiv-sovannlyda/OS-SE-p20240001/os-lab-p20240001/lab10
+2026-06-16 13:13:10 | home directory is /home/se-kiv-sovannlyda
+2026-06-16 13:13:10 | automation_demo finished successfully
+2026-06-16 13:13:10 | automation_demo started by user se-kiv-sovannlyda
+2026-06-16 13:13:10 | working directory is /home/se-kiv-sovannlyda/OS-SE-p20240001/os-lab-p20240001/lab10
+2026-06-16 13:13:10 | home directory is /home/se-kiv-sovannlyda
+2026-06-16 13:13:10 | automation_demo finished successfully
+2026-06-16 13:14:47 | automation_demo started by user se-kiv-sovannlyda
+2026-06-16 13:14:47 | working directory is /home/se-kiv-sovannlyda/OS-SE-p20240001/os-lab-p20240001/lab10
+2026-06-16 13:14:47 | home directory is /home/se-kiv-sovannlyda
+2026-06-16 13:14:47 | automation_demo finished successfully
+2026-06-16 13:14:47 | automation_demo started by user se-kiv-sovannlyda
+2026-06-16 13:14:47 | working directory is /home/se-kiv-sovannlyda/OS-SE-p20240001/os-lab-p20240001/lab10
+2026-06-16 13:14:47 | home directory is /home/se-kiv-sovannlyda
+2026-06-16 13:14:47 | automation_demo finished successfully

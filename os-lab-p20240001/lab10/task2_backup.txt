@@ -1,0 +1,23 @@
+=== backup script permissions ===
+-rwxrwxr-x 1 se-kiv-sovannlyda se-kiv-sovannlyda 792 Jun 16 13:20 /home/se-kiv-sovannlyda/bin/backup_project
+=== archives kept (should be 3) ===
+/home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132108.tar.gz
+/home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132107.tar.gz
+/home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132106.tar.gz
+=== backup log ===
+2026-06-16 13:21:05 | starting backup of /home/se-kiv-sovannlyda/os-lab-automation/project
+2026-06-16 13:21:05 | created archive /home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132105.tar.gz
+2026-06-16 13:21:05 | no old archives to prune
+2026-06-16 13:21:05 | backup finished successfully
+2026-06-16 13:21:06 | starting backup of /home/se-kiv-sovannlyda/os-lab-automation/project
+2026-06-16 13:21:06 | created archive /home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132106.tar.gz
+2026-06-16 13:21:06 | no old archives to prune
+2026-06-16 13:21:06 | backup finished successfully
+2026-06-16 13:21:07 | starting backup of /home/se-kiv-sovannlyda/os-lab-automation/project
+2026-06-16 13:21:07 | created archive /home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132107.tar.gz
+2026-06-16 13:21:07 | no old archives to prune
+2026-06-16 13:21:07 | backup finished successfully
+2026-06-16 13:21:08 | starting backup of /home/se-kiv-sovannlyda/os-lab-automation/project
+2026-06-16 13:21:08 | created archive /home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132108.tar.gz
+2026-06-16 13:21:08 | pruned old archive /home/se-kiv-sovannlyda/os-lab-automation/backups/project_20260616_132105.tar.gz
+2026-06-16 13:21:08 | backup finished successfully
