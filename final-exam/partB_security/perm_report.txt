@@ -1,0 +1,10 @@
+drwx--x--x 2 se-kiv-sovannlyda se-kiv-sovannlyda 4096 Jun 30 13:51 shared_dir
+-rw------- 1 se-kiv-sovannlyda se-kiv-sovannlyda 0 Jun 30 13:51 private_dir/private_file
+  File: private_dir/private_file
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 252,0	Inode: 47349183    Links: 1
+Access: (0600/-rw-------)  Uid: ( 1128/se-kiv-sovannlyda)   Gid: ( 1130/se-kiv-sovannlyda)
+Access: 2026-06-30 13:51:24.271048007 +0700
+Modify: 2026-06-30 13:51:24.271048007 +0700
+Change: 2026-06-30 13:51:47.083908634 +0700
+ Birth: 2026-06-30 13:51:24.271048007 +0700

@@ -1,0 +1,21 @@
+#!/bin/bash
+REPORT="consolidated_report.txt"
+> "$REPORT" # Clear the report if it already exists
+
+# Loop over all directories passed as arguments
+for dir in "$@"; do
+    if [ -d "$dir" ]; then
+        for file in "$dir"/*; do
+            # Safe scan: Check if exists (-e), is a regular file (-f), and is readable (-r)
+            if [ -e "$file" ] && [ -f "$file" ] && [ -r "$file" ]; then
+                echo -e "\n--- Contents of $file ---" >> "$REPORT"
+                cat "$file" >> "$REPORT"
+            else
+                echo "Skipped unreadable or invalid file: $file"
+            fi
+        done
+    fi
+done
+
+echo "Collection complete. Printing report:"
+cat "$REPORT"

@@ -1,0 +1,13 @@
+#!/bin/bash
+STOCK_FILE="/home/$USER/OS-SE-p20240001/final-exam/partD_secure/stock.txt"
+LOG_FILE="/home/$USER/OS-SE-p20240001/final-exam/partD_secure/sales.log"
+
+echo "100" > "$STOCK_FILE"
+> "$LOG_FILE"
+
+for i in {1..40}; do
+    buy_widget "SwarmBot$i" 1 &
+done
+
+wait
+echo "Final Stock: $(cat $STOCK_FILE)"

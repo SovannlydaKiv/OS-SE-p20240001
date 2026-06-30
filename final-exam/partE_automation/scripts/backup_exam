@@ -1,0 +1,5 @@
+#!/bin/bash
+EXAM_DIR="/home/$USER/OS-SE-p20240001/final-exam"
+DEST_DIR="/home/$USER/exam-backups"
+mkdir -p "$DEST_DIR"
+tar -czf "$DEST_DIR/final-exam-$(date +%s).tar.gz" -C "/home/$USER/OS-SE-p20240001" "final-exam" 2>/dev/null

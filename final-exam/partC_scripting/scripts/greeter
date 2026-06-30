@@ -1,0 +1,18 @@
+#!/bin/bash
+USER=$(whoami)
+LOGGED_IN=$(who | wc -l)
+UPTIME=$(uptime -p)
+
+# Array of at least 3 messages
+MESSAGES=("Welcome back, engineer." "All systems nominal." "OrbitWorks backend active." "Ready for deployment.")
+
+# Select a random message
+RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+
+echo "====================================="
+echo " User: $USER"
+echo " Logged in: $LOGGED_IN"
+echo " Uptime: $UPTIME"
+echo "====================================="
+echo " > $RANDOM_MSG"
+echo "====================================="

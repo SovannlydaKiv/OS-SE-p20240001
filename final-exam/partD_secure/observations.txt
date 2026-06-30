@@ -1,0 +1,4 @@
+Run 1 Final Stock: 98
+Run 2 Final Stock: 99
+Run 3 Final Stock: 97
+Conclusion: Without locking, the concurrent bots read the same initial stock value into memory and overwrite each other's decrements, leaving more stock than there should be.

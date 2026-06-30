@@ -1,0 +1,11 @@
+#!/bin/bash
+TARGET_DIR="/home/$USER/OS-SE-p20240001/final-exam/partE_automation/sample_project"
+BACKUP_DIR="/home/$USER/OS-SE-p20240001/final-exam/partE_automation/backups"
+mkdir -p "$BACKUP_DIR"
+
+ARCHIVE_NAME="$BACKUP_DIR/backup_$(date +%s).tar.gz"
+# Archive the target directory
+tar -czf "$ARCHIVE_NAME" "$TARGET_DIR" 2>/dev/null
+
+# Keep only the newest 4 archives, remove the rest
+ls -t "$BACKUP_DIR"/backup_*.tar.gz | tail -n +5 | xargs -r rm -f
