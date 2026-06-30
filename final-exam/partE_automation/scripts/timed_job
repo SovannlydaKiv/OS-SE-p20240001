@@ -1,2 +1,12 @@
 #!/bin/bash
-echo "$(date '+%Y-%m-%d %H:%M:%S') - Job executed successfully" >> "$1"
+LOG_FILE="$1"
+TODAY=$(date '+%Y-%m-%d')
+MARKER_TOKEN="IDEMPMARK"
+
+# LIVE CURVEBALL: Idempotence check
+if grep -q "$TODAY.*$MARKER_TOKEN" "$LOG_FILE" 2>/dev/null; then
+    echo "Idempotent exit: Token '$MARKER_TOKEN' already found for today."
+    exit 0
+fi
+
+echo "$TODAY $(date '+%H:%M:%S') - Job executed successfully [$MARKER_TOKEN]" >> "$LOG_FILE"
