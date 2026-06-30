@@ -10,12 +10,19 @@ if [[ ! "$QTY" =~ ^[0-9]+$ ]] || [ "$QTY" -le 0 ]; then
     exit 1
 fi
 
-# Advisory exclusive lock (fd 200)
+# LIVE CURVEBALL: Enforce the Cap
+PURCHASE_CAP=8
+
+if [ "$QTY" -gt "$PURCHASE_CAP" ]; then
+    echo "Order rejected: Quantity $QTY exceeds per-buyer cap of $PURCHASE_CAP."
+    exit 1
+fi
+
 (
     flock -x 200
     STOCK=$(cat "$STOCK_FILE")
     if [ "$STOCK" -ge "$QTY" ]; then
-        sleep 0.1 # We keep the delay to prove the lock forces them to wait!
+        sleep 0.1 
         NEW_STOCK=$((STOCK - QTY))
         echo "$NEW_STOCK" > "$STOCK_FILE"
         echo "p20240001 - $BUYER bought $QTY Widget(s)" >> "$LOG_FILE"
